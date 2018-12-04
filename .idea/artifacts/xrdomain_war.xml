@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="xrdomain:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="xrdomain.war">
+      <element id="artifact" artifact-name="xrdomain:war exploded" />
+    </root>
+  </artifact>
+</component>

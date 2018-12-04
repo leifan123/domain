@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.domain.dao.DomianCartDao">
+
+	<resultMap id="DomianCartMap" type="com.domain.pojo.DomianCart">
+		<id property="id" column="id"/>
+		<result property="companyid" column="companyId"/>
+		<result property="ordernumber" column="orderNumber"/>
+		<result property="domainId" column="domain_id"/>
+		<result property="cpCase" column="cp_case"/>
+		<result property="caseType" column="case_type"/>
+		<result property="caseTime" column="case_time"/>
+		<result property="ordercreatetime" column="orderCreateTime"/>
+		<result property="orderendtime" column="orderEndTime"/>
+		<result property="paymentstatus" column="paymentStatus"/>
+		<result property="zoneid" column="zoneId"/>
+		<result property="zonename" column="zoneName"/>
+		<result property="remark" column="remark"/>
+	</resultMap>
+
+	<insert id="insert"  useGeneratedKeys="true" keyProperty="id"  parameterType="com.domain.pojo.DomianCart">
+		insert into  domian_cart (companyId,orderNumber,domain_id,cp_case,case_type,case_time,orderCreateTime,orderEndTime,paymentStatus,zoneId,zoneName,remark) values(#{companyid},#{ordernumber},#{domainId},#{cpCase},#{caseType},#{caseTime},#{ordercreatetime},#{orderendtime},#{paymentstatus},#{zoneid},#{zonename},#{remark})	
+	</insert>
+
+	<update id="update" parameterType="com.domain.pojo.DomianCart">
+		update domian_cart
+		<set>
+			<if test="companyid!=null">companyId = #{companyid},</if>
+			<if test="ordernumber!=null">orderNumber = #{ordernumber},</if>
+			<if test="domainId!=null">domain_id = #{domainId},</if>
+			<if test="cpCase!=null">cp_case = #{cpCase},</if>
+			<if test="caseType!=null">case_type = #{caseType},</if>
+			<if test="caseTime!=null">case_time = #{caseTime},</if>
+			<if test="ordercreatetime!=null">orderCreateTime = #{ordercreatetime},</if>
+			<if test="orderendtime!=null">orderEndTime = #{orderendtime},</if>
+			<if test="paymentstatus!=null">paymentStatus = #{paymentstatus},</if>
+			<if test="zoneid!=null">zoneId = #{zoneid},</if>
+			<if test="zonename!=null">zoneName = #{zonename},</if>
+			<if test="remark!=null">remark = #{remark}</if>
+		</set>
+		where id = #{id}
+	</update>
+
+	<delete id="delete" parameterType="com.domain.pojo.DomianCart">
+		delete from domian_cart where 1=1
+			<if test="id != null"> and id = #{id}</if>
+			<if test="companyid != null"> and companyId = #{companyid}</if>
+			<if test="ordernumber != null"> and orderNumber = #{ordernumber}</if>
+			<if test="domainId != null"> and domain_id = #{domainId}</if>
+			<if test="cpCase != null"> and cp_case = #{cpCase}</if>
+			<if test="caseType != null"> and case_type = #{caseType}</if>
+			<if test="caseTime != null"> and case_time = #{caseTime}</if>
+			<if test="ordercreatetime != null"> and orderCreateTime = #{ordercreatetime}</if>
+			<if test="orderendtime != null"> and orderEndTime = #{orderendtime}</if>
+			<if test="paymentstatus != null"> and paymentStatus = #{paymentstatus}</if>
+			<if test="zoneid != null"> and zoneId = #{zoneid}</if>
+			<if test="zonename != null"> and zoneName = #{zonename}</if>
+			<if test="remark != null"> and remark = #{remark}</if>
+	</delete>
+
+	<select id="select" resultMap="DomianCartMap" parameterType="com.domain.pojo.DomianCart">
+		select * from domian_cart where 1 = 1
+			<if test="id != null"> and id = #{id}</if>
+			<if test="companyid != null"> and companyId = #{companyid}</if>
+			<if test="ordernumber != null"> and orderNumber = #{ordernumber}</if>
+			<if test="domainId != null"> and domain_id = #{domainId}</if>
+			<if test="cpCase != null"> and cp_case = #{cpCase}</if>
+			<if test="caseType != null"> and case_type = #{caseType}</if>
+			<if test="caseTime != null"> and case_time = #{caseTime}</if>
+			<if test="ordercreatetime != null"> and orderCreateTime = #{ordercreatetime}</if>
+			<if test="orderendtime != null"> and orderEndTime = #{orderendtime}</if>
+			<if test="paymentstatus != null"> and paymentStatus = #{paymentstatus}</if>
+			<if test="zoneid != null"> and zoneId = #{zoneid}</if>
+			<if test="zonename != null"> and zoneName = #{zonename}</if>
+			<if test="remark != null"> and remark = #{remark}</if>
+	</select>
+
+	<select id="selectByParam" resultMap="DomianCartMap" parameterType="java.util.Map">
+		select  <if test="field != null and field != ''"> ${field}</if>  <if test="field == null or field == ''"> * </if>     from domian_cart <if test="param != null and param != ''">where ${param}</if>
+	</select>
+
+	<delete id="deleteByParam" parameterType="java.util.Map">
+		delete from domian_cart  <if test="param != null and param != ''">where ${param}</if>
+	</delete>
+
+	<update id="updateByParam" parameterType="java.util.Map">
+		<if test="param != null and param !=''">update domian_cart set ${param}</if>
+	</update>
+
+</mapper>

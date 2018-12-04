@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="DomainAuthenticationDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
+  		<property name="sqlSessionFactory" ref="sqlSessionFactory" />  
+ 		<property name="mapperInterface" value="com.domain.dao.DomainAuthenticationDao" /> 
+ 	</bean>
+
+	<bean id="DomainConfigureDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
+  		<property name="sqlSessionFactory" ref="sqlSessionFactory" />  
+ 		<property name="mapperInterface" value="com.domain.dao.DomainConfigureDao" /> 
+ 	</bean>
+
+	<bean id="DomainEmailDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
+  		<property name="sqlSessionFactory" ref="sqlSessionFactory" />  
+ 		<property name="mapperInterface" value="com.domain.dao.DomainEmailDao" /> 
+ 	</bean>
+
+	<bean id="DomainNameDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
+  		<property name="sqlSessionFactory" ref="sqlSessionFactory" />  
+ 		<property name="mapperInterface" value="com.domain.dao.DomainNameDao" /> 
+ 	</bean>
+
+	<bean id="DomainOperatelogDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
+  		<property name="sqlSessionFactory" ref="sqlSessionFactory" />  
+ 		<property name="mapperInterface" value="com.domain.dao.DomainOperatelogDao" /> 
+ 	</bean>
+
+	<bean id="DomainPriceDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
+  		<property name="sqlSessionFactory" ref="sqlSessionFactory" />  
+ 		<property name="mapperInterface" value="com.domain.dao.DomainPriceDao" /> 
+ 	</bean>
+
+	<bean id="DomainResolveListDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
+  		<property name="sqlSessionFactory" ref="sqlSessionFactory" />  
+ 		<property name="mapperInterface" value="com.domain.dao.DomainResolveListDao" /> 
+ 	</bean>
+
+	<bean id="DomainSyslogDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
+  		<property name="sqlSessionFactory" ref="sqlSessionFactory" />  
+ 		<property name="mapperInterface" value="com.domain.dao.DomainSyslogDao" /> 
+ 	</bean>
+
+	<bean id="DomainTemplateDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
+  		<property name="sqlSessionFactory" ref="sqlSessionFactory" />  
+ 		<property name="mapperInterface" value="com.domain.dao.DomainTemplateDao" /> 
+ 	</bean>
+
+	<bean id="DomainTransferDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
+  		<property name="sqlSessionFactory" ref="sqlSessionFactory" />  
+ 		<property name="mapperInterface" value="com.domain.dao.DomainTransferDao" /> 
+ 	</bean>
+
+	<bean id="DomianCartDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
+  		<property name="sqlSessionFactory" ref="sqlSessionFactory" />  
+ 		<property name="mapperInterface" value="com.domain.dao.DomianCartDao" /> 
+ 	</bean>
+
+	<bean id="DomainRoleDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
+  		<property name="sqlSessionFactory" ref="sqlSessionFactory" />  
+ 		<property name="mapperInterface" value="com.domain.dao.DomainRoleDao" /> 
+ 	</bean>
+</beans>

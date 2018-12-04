@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.domain.dao.DomainResolveListDao">
+
+	<resultMap id="DomainResolveListMap" type="com.domain.pojo.DomainResolveList">
+		<id property="id" column="id"/>
+		<result property="userId" column="user_id"/>
+		<result property="companyid" column="companyId"/>
+		<result property="domainName" column="domain_name"/>
+		<result property="recItem" column="rec_item"/>
+		<result property="recType" column="rec_type"/>
+		<result property="recLevel" column="rec_level"/>
+		<result property="recValue" column="rec_value"/>
+		<result property="recTtl" column="rec_ttl"/>
+		<result property="recId" column="rec_id"/>
+		<result property="resolveCode" column="resolve_code"/>
+		<result property="remark" column="remark"/>
+	</resultMap>
+
+	<insert id="insert"  useGeneratedKeys="true" keyProperty="id"  parameterType="com.domain.pojo.DomainResolveList">
+		insert into  domain_resolve_list (user_id,companyId,domain_name,rec_item,rec_type,rec_level,rec_value,rec_ttl,rec_id,resolve_code,remark) values(#{userId},#{companyid},#{domainName},#{recItem},#{recType},#{recLevel},#{recValue},#{recTtl},#{recId},#{resolveCode},#{remark})	
+	</insert>
+
+	<update id="update" parameterType="com.domain.pojo.DomainResolveList">
+		update domain_resolve_list
+		<set>
+			<if test="userId!=null">user_id = #{userId},</if>
+			<if test="companyid!=null">companyId = #{companyid},</if>
+			<if test="domainName!=null">domain_name = #{domainName},</if>
+			<if test="recItem!=null">rec_item = #{recItem},</if>
+			<if test="recType!=null">rec_type = #{recType},</if>
+			<if test="recLevel!=null">rec_level = #{recLevel},</if>
+			<if test="recValue!=null">rec_value = #{recValue},</if>
+			<if test="recTtl!=null">rec_ttl = #{recTtl},</if>
+			<if test="recId!=null">rec_id = #{recId},</if>
+			<if test="resolveCode!=null">resolve_code = #{resolveCode},</if>
+			<if test="remark!=null">remark = #{remark}</if>
+		</set>
+		where id = #{id}
+	</update>
+
+	<delete id="delete" parameterType="com.domain.pojo.DomainResolveList">
+		delete from domain_resolve_list where 1=1
+			<if test="id != null"> and id = #{id}</if>
+			<if test="userId != null"> and user_id = #{userId}</if>
+			<if test="companyid != null"> and companyId = #{companyid}</if>
+			<if test="domainName != null"> and domain_name = #{domainName}</if>
+			<if test="recItem != null"> and rec_item = #{recItem}</if>
+			<if test="recType != null"> and rec_type = #{recType}</if>
+			<if test="recLevel != null"> and rec_level = #{recLevel}</if>
+			<if test="recValue != null"> and rec_value = #{recValue}</if>
+			<if test="recTtl != null"> and rec_ttl = #{recTtl}</if>
+			<if test="recId != null"> and rec_id = #{recId}</if>
+			<if test="resolveCode != null"> and resolve_code = #{resolveCode}</if>
+			<if test="remark != null"> and remark = #{remark}</if>
+	</delete>
+
+	<select id="select" resultMap="DomainResolveListMap" parameterType="com.domain.pojo.DomainResolveList">
+		select * from domain_resolve_list where 1 = 1
+			<if test="id != null"> and id = #{id}</if>
+			<if test="userId != null"> and user_id = #{userId}</if>
+			<if test="companyid != null"> and companyId = #{companyid}</if>
+			<if test="domainName != null"> and domain_name = #{domainName}</if>
+			<if test="recItem != null"> and rec_item = #{recItem}</if>
+			<if test="recType != null"> and rec_type = #{recType}</if>
+			<if test="recLevel != null"> and rec_level = #{recLevel}</if>
+			<if test="recValue != null"> and rec_value = #{recValue}</if>
+			<if test="recTtl != null"> and rec_ttl = #{recTtl}</if>
+			<if test="recId != null"> and rec_id = #{recId}</if>
+			<if test="resolveCode != null"> and resolve_code = #{resolveCode}</if>
+			<if test="remark != null"> and remark = #{remark}</if>
+	</select>
+
+	<select id="selectByParam" resultMap="DomainResolveListMap" parameterType="java.util.Map">
+		select  
+		<if test="field != null and field != ''"> ${field}</if>  
+		<if test="field == null or field == ''"> * </if>
+		     from domain_resolve_list 
+		<if test="param != null and param != ''">where ${param}</if>
+	</select>
+	<select id="selectCount" resultType="int" parameterType="java.util.Map">
+		select
+		<if test="field != null and field != ''"> ${field}</if>
+		<if test="field == null or field == ''"> * </if>
+		from domain_resolve_list
+		<if test="param != null and param != ''">where ${param}</if>
+	</select>
+
+	<delete id="deleteByParam" parameterType="java.util.Map">
+		delete from domain_resolve_list  <if test="param != null and param != ''">where ${param}</if>
+	</delete>
+
+	<update id="updateByParam" parameterType="java.util.Map">
+		<if test="param != null and param !=''">update domain_resolve_list set ${param}</if>
+	</update>
+
+</mapper>

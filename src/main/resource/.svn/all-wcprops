@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/ruicloud/!svn/ver/5059/trunk/xrdomain/src/main/resource
+END
+oss-mybatis-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ruicloud/!svn/ver/3240/trunk/xrdomain/src/main/resource/oss-mybatis-config.xml
+END
+log4j.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/resource/log4j.xml
+END
+mybatis-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ruicloud/!svn/ver/4494/trunk/xrdomain/src/main/resource/mybatis-config.xml
+END
+boss-mybatis-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ruicloud/!svn/ver/4022/trunk/xrdomain/src/main/resource/boss-mybatis-config.xml
+END
+jdbc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/ruicloud/!svn/ver/3240/trunk/xrdomain/src/main/resource/jdbc.properties
+END
+redis.properties
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/ruicloud/!svn/ver/4069/trunk/xrdomain/src/main/resource/redis.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/ruicloud/!svn/ver/4024/trunk/xrdomain/src/main/resource/log4j.properties
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ruicloud/!svn/ver/4069/trunk/xrdomain/src/main/resource/applicationContext.xml
+END
+dispatcher-servlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ruicloud/!svn/ver/3240/trunk/xrdomain/src/main/resource/dispatcher-servlet.xml
+END
+errorinfo.properties
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ruicloud/!svn/ver/4025/trunk/xrdomain/src/main/resource/errorinfo.properties
+END
+cloudStack.properties
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ruicloud/!svn/ver/5059/trunk/xrdomain/src/main/resource/cloudStack.properties
+END
+spring-dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/ruicloud/!svn/ver/4494/trunk/xrdomain/src/main/resource/spring-dao.xml
+END
+cloud-mybatis-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ruicloud/!svn/ver/4024/trunk/xrdomain/src/main/resource/cloud-mybatis-config.xml
+END
+domain.properties
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/ruicloud/!svn/ver/4489/trunk/xrdomain/src/main/resource/domain.properties
+END
+spring-service.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ruicloud/!svn/ver/4494/trunk/xrdomain/src/main/resource/spring-service.xml
+END

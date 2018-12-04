@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.domain.dao.DomainSslMaterialDao">
+
+	<resultMap id="DomainSslMaterialMap" type="com.domain.pojo.DomainSslMaterial">
+		<id property="id" column="id"/>
+		<result property="companyid" column="companyId"/>
+		<result property="sslcertid" column="sslCertId"/>
+		<result property="pctype" column="pcType"/>
+		<result property="pccentent" column="pcCentent"/>
+		<result property="picexpfromdate" column="picExpFromDate"/>
+		<result property="picexptodate" column="picExpToDate"/>
+	</resultMap>
+
+	<insert id="insert"  useGeneratedKeys="true" keyProperty="id"  parameterType="com.domain.pojo.DomainSslMaterial">
+		insert into  domain_ssl_material (companyId,sslCertId,pcType,pcCentent,picExpFromDate,picExpToDate) values(#{companyid},#{sslcertid},#{pctype},#{pccentent},#{picexpfromdate},#{picexptodate})	
+	</insert>
+
+	<update id="update" parameterType="com.domain.pojo.DomainSslMaterial">
+		update domain_ssl_material
+		<set>
+			<if test="companyid!=null">companyId = #{companyid},</if>
+			<if test="sslcertid!=null">sslCertId = #{sslcertid},</if>
+			<if test="pctype!=null">pcType = #{pctype},</if>
+			<if test="pccentent!=null">pcCentent = #{pccentent},</if>
+			<if test="picexpfromdate!=null">picExpFromDate = #{picexpfromdate},</if>
+			<if test="picexptodate!=null">picExpToDate = #{picexptodate}</if>
+		</set>
+		where id = #{id}
+	</update>
+
+	<delete id="delete" parameterType="com.domain.pojo.DomainSslMaterial">
+		delete from domain_ssl_material where 1=1
+			<if test="id != null"> and id = #{id}</if>
+			<if test="companyid != null"> and companyId = #{companyid}</if>
+			<if test="sslcertid != null"> and sslCertId = #{sslcertid}</if>
+			<if test="pctype != null"> and pcType = #{pctype}</if>
+			<if test="pccentent != null"> and pcCentent = #{pccentent}</if>
+			<if test="picexpfromdate != null"> and picExpFromDate = #{picexpfromdate}</if>
+			<if test="picexptodate != null"> and picExpToDate = #{picexptodate}</if>
+	</delete>
+
+	<select id="select" resultMap="DomainSslMaterialMap" parameterType="com.domain.pojo.DomainSslMaterial">
+		select * from domain_ssl_material where 1 = 1
+			<if test="id != null"> and id = #{id}</if>
+			<if test="companyid != null"> and companyId = #{companyid}</if>
+			<if test="sslcertid != null"> and sslCertId = #{sslcertid}</if>
+			<if test="pctype != null"> and pcType = #{pctype}</if>
+			<if test="pccentent != null"> and pcCentent = #{pccentent}</if>
+			<if test="picexpfromdate != null"> and picExpFromDate = #{picexpfromdate}</if>
+			<if test="picexptodate != null"> and picExpToDate = #{picexptodate}</if>
+	</select>
+
+	<select id="selectByParam" resultMap="DomainSslMaterialMap" parameterType="java.util.Map">
+		select  <if test="field != null and field != ''"> ${field}</if>  <if test="field == null or field == ''"> * </if>     from domain_ssl_material <if test="param != null and param != ''">where ${param}</if>
+	</select>
+
+	<delete id="deleteByParam" parameterType="java.util.Map">
+		delete from domain_ssl_material  <if test="param != null and param != ''">where ${param}</if>
+	</delete>
+
+	<update id="updateByParam" parameterType="java.util.Map">
+		<if test="param != null and param !=''">update domain_ssl_material set ${param}</if>
+	</update>
+
+</mapper>

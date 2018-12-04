@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/ruicloud/!svn/ver/4624/trunk/xrdomain/src/main/resource/mappers
+END
+DomainEmail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ruicloud/!svn/ver/4168/trunk/xrdomain/src/main/resource/mappers/DomainEmail.xml
+END
+DomainSsl.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ruicloud/!svn/ver/4494/trunk/xrdomain/src/main/resource/mappers/DomainSsl.xml
+END
+DomainRole.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ruicloud/!svn/ver/3856/trunk/xrdomain/src/main/resource/mappers/DomainRole.xml
+END
+DomainSyslog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/resource/mappers/DomainSyslog.xml
+END
+DomainAuthentication.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/ruicloud/!svn/ver/3997/trunk/xrdomain/src/main/resource/mappers/DomainAuthentication.xml
+END
+DomainTemplate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ruicloud/!svn/ver/4066/trunk/xrdomain/src/main/resource/mappers/DomainTemplate.xml
+END
+DomainName.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ruicloud/!svn/ver/4624/trunk/xrdomain/src/main/resource/mappers/DomainName.xml
+END
+DomainTransfer.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ruicloud/!svn/ver/3850/trunk/xrdomain/src/main/resource/mappers/DomainTransfer.xml
+END
+DomainSslMaterial.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/ruicloud/!svn/ver/4494/trunk/xrdomain/src/main/resource/mappers/DomainSslMaterial.xml
+END
+DomainConfigure.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/resource/mappers/DomainConfigure.xml
+END
+DomianCart.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/resource/mappers/DomianCart.xml
+END
+DomainOperatelog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/ruicloud/!svn/ver/4561/trunk/xrdomain/src/main/resource/mappers/DomainOperatelog.xml
+END
+DomainPrice.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ruicloud/!svn/ver/4489/trunk/xrdomain/src/main/resource/mappers/DomainPrice.xml
+END
+DomainResolveList.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/ruicloud/!svn/ver/4552/trunk/xrdomain/src/main/resource/mappers/DomainResolveList.xml
+END

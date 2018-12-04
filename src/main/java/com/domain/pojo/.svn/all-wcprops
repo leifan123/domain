@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/ruicloud/!svn/ver/4718/trunk/xrdomain/src/main/java/com/domain/pojo
+END
+DomainName.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ruicloud/!svn/ver/4624/trunk/xrdomain/src/main/java/com/domain/pojo/DomainName.java
+END
+DomainTransfer.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/ruicloud/!svn/ver/4028/trunk/xrdomain/src/main/java/com/domain/pojo/DomainTransfer.java
+END
+UserAccess.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ruicloud/!svn/ver/4024/trunk/xrdomain/src/main/java/com/domain/pojo/UserAccess.java
+END
+DomainSslMaterial.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/ruicloud/!svn/ver/4494/trunk/xrdomain/src/main/java/com/domain/pojo/DomainSslMaterial.java
+END
+UserCoreAccess.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/ruicloud/!svn/ver/4024/trunk/xrdomain/src/main/java/com/domain/pojo/UserCoreAccess.java
+END
+Account.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ruicloud/!svn/ver/4028/trunk/xrdomain/src/main/java/com/domain/pojo/Account.java
+END
+ReqData.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/pojo/ReqData.java
+END
+DomainSsl.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ruicloud/!svn/ver/4718/trunk/xrdomain/src/main/java/com/domain/pojo/DomainSsl.java
+END
+DomainResolveList.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/ruicloud/!svn/ver/4552/trunk/xrdomain/src/main/java/com/domain/pojo/DomainResolveList.java
+END
+DomainPrice.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/ruicloud/!svn/ver/3857/trunk/xrdomain/src/main/java/com/domain/pojo/DomainPrice.java
+END
+DomainOperatelog.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/pojo/DomainOperatelog.java
+END
+DomainConfigure.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/pojo/DomainConfigure.java
+END
+OrderTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ruicloud/!svn/ver/4028/trunk/xrdomain/src/main/java/com/domain/pojo/OrderTable.java
+END
+DomainTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/ruicloud/!svn/ver/4066/trunk/xrdomain/src/main/java/com/domain/pojo/DomainTemplate.java
+END
+DomainAuthentication.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ruicloud/!svn/ver/5093/trunk/xrdomain/src/main/java/com/domain/pojo/DomainAuthentication.java
+END
+DomainSyslog.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/pojo/DomainSyslog.java
+END
+DomainRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ruicloud/!svn/ver/3315/trunk/xrdomain/src/main/java/com/domain/pojo/DomainRole.java
+END
+RspData.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/pojo/RspData.java
+END
+DomainEmail.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/pojo/DomainEmail.java
+END
+YrComper.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/ruicloud/!svn/ver/3850/trunk/xrdomain/src/main/java/com/domain/pojo/YrComper.java
+END
+DomianCart.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/pojo/DomianCart.java
+END

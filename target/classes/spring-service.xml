@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="DomainAuthenticationService" class="com.domain.service.impl.DomainAuthenticationImpl">
+ 		<property name="domainAuthenticationDao" ref="DomainAuthenticationDao" />
+ 	</bean>
+
+	<bean id="DomainConfigureService" class="com.domain.service.impl.DomainConfigureImpl">
+ 		<property name="domainConfigureDao" ref="DomainConfigureDao" />
+ 	</bean>
+
+	<bean id="DomainEmailService" class="com.domain.service.impl.DomainEmailImpl">
+ 		<property name="domainEmailDao" ref="DomainEmailDao" />
+ 	</bean>
+
+	<bean id="DomainNameService" class="com.domain.service.impl.DomainNameImpl">
+ 		<property name="domainNameDao" ref="DomainNameDao" />
+ 	</bean>
+
+	<bean id="DomainOperatelogService" class="com.domain.service.impl.DomainOperatelogImpl">
+ 		<property name="domainOperatelogDao" ref="DomainOperatelogDao" />
+ 	</bean>
+
+	<bean id="DomainPriceService" class="com.domain.service.impl.DomainPriceImpl">
+ 		<property name="domainPriceDao" ref="DomainPriceDao" />
+ 	</bean>
+
+	<bean id="DomainResolveListService" class="com.domain.service.impl.DomainResolveListImpl">
+ 		<property name="domainResolveListDao" ref="DomainResolveListDao" />
+ 	</bean>
+
+	<bean id="DomainSyslogService" class="com.domain.service.impl.DomainSyslogImpl">
+ 		<property name="domainSyslogDao" ref="DomainSyslogDao" />
+ 	</bean>
+
+	<bean id="DomainTemplateService" class="com.domain.service.impl.DomainTemplateImpl">
+ 		<property name="domainTemplateDao" ref="DomainTemplateDao" />
+ 	</bean>
+
+	<bean id="DomainTransferService" class="com.domain.service.impl.DomainTransferImpl">
+ 		<property name="domainTransferDao" ref="DomainTransferDao" />
+ 	</bean>
+
+	<bean id="DomianCartService" class="com.domain.service.impl.DomianCartImpl">
+ 		<property name="domianCartDao" ref="DomianCartDao" />
+ 	</bean>
+ 	
+ 	<bean id="DomainRoleService" class="com.domain.service.impl.DomainRoleImpl">
+ 		<property name="domainRoleDao" ref="DomainRoleDao" />
+ 	</bean>
+ 	
+ 	<bean id="DomainSslService" class="com.domain.service.impl.DomainSslImpl">
+ 		<property name="domainSslDao" ref="DomainSslDao" />
+ 	</bean>
+
+	<bean id="DomainSslMaterialService" class="com.domain.service.impl.DomainSslMaterialImpl">
+ 		<property name="domainSslMaterialDao" ref="DomainSslMaterialDao" />
+ 	</bean>
+ 	
+ 	 <bean id="OrderTableService" class="com.domain.service.impl.OrderTableImpl">
+ 		<property name="orderTableDao" ref="OrderTableDao" />
+ 	</bean>
+ 	
+ 	 <bean id="YrComperService" class="com.domain.service.impl.YrComperImpl">
+ 		<property name="yrComperDao" ref="YrComperDao" />
+ 	</bean>
+ 	
+ 	<bean id="UserCoreAccessService" class="com.domain.service.impl.UserCoreAccessImpl">
+ 		<property name="userCoreAccessDao" ref="UserCoreAccessDao" />
+ 	</bean>
+ 	<bean id="UserAccessService" class="com.domain.service.impl.UserAccessImpl">
+ 		<property name="userAccessDao" ref="UserAccessDao" />
+ 	</bean>
+
+</beans>

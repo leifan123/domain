@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/ruicloud/!svn/ver/5089/trunk/xrdomain
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ruicloud/!svn/ver/4175/trunk/xrdomain/pom.xml
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/ruicloud/!svn/ver/3499/trunk/xrdomain/.project
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ruicloud/!svn/ver/3499/trunk/xrdomain/.classpath
+END

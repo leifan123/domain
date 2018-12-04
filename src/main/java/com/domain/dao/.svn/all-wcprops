@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/ruicloud/!svn/ver/4552/trunk/xrdomain/src/main/java/com/domain/dao
+END
+DomainConfigureDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/dao/DomainConfigureDao.java
+END
+DomainOperatelogDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ruicloud/!svn/ver/4552/trunk/xrdomain/src/main/java/com/domain/dao/DomainOperatelogDao.java
+END
+DomainPriceDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/ruicloud/!svn/ver/3856/trunk/xrdomain/src/main/java/com/domain/dao/DomainPriceDao.java
+END
+DomainResolveListDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/dao/DomainResolveListDao.java
+END
+DomainSslDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/ruicloud/!svn/ver/4494/trunk/xrdomain/src/main/java/com/domain/dao/DomainSslDao.java
+END
+UserCoreAccessDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/ruicloud/!svn/ver/4024/trunk/xrdomain/src/main/java/com/domain/dao/UserCoreAccessDao.java
+END
+DomainTransferDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/dao/DomainTransferDao.java
+END
+DomainNameDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/dao/DomainNameDao.java
+END
+UserAccessDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/ruicloud/!svn/ver/4024/trunk/xrdomain/src/main/java/com/domain/dao/UserAccessDao.java
+END
+DomainSslMaterialDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ruicloud/!svn/ver/4494/trunk/xrdomain/src/main/java/com/domain/dao/DomainSslMaterialDao.java
+END
+DomianCartDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/dao/DomianCartDao.java
+END
+YrComperDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ruicloud/!svn/ver/3850/trunk/xrdomain/src/main/java/com/domain/dao/YrComperDao.java
+END
+DomainEmailDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/dao/DomainEmailDao.java
+END
+DomainRoleDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/ruicloud/!svn/ver/3315/trunk/xrdomain/src/main/java/com/domain/dao/DomainRoleDao.java
+END
+DomainSyslogDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/dao/DomainSyslogDao.java
+END
+DomainAuthenticationDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/dao/DomainAuthenticationDao.java
+END
+DomainTemplateDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/ruicloud/!svn/ver/4013/trunk/xrdomain/src/main/java/com/domain/dao/DomainTemplateDao.java
+END
+OrderTableDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/ruicloud/!svn/ver/3850/trunk/xrdomain/src/main/java/com/domain/dao/OrderTableDao.java
+END

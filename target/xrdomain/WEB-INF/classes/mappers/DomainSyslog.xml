@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.domain.dao.DomainSyslogDao">
+
+	<resultMap id="DomainSyslogMap" type="com.domain.pojo.DomainSyslog">
+		<id property="id" column="id"/>
+		<result property="loglevel" column="loglevel"/>
+		<result property="classname" column="className"/>
+		<result property="method" column="method"/>
+		<result property="msg" column="msg"/>
+		<result property="createtime" column="createtime"/>
+	</resultMap>
+
+	<insert id="insert"  useGeneratedKeys="true" keyProperty="id"  parameterType="com.domain.pojo.DomainSyslog">
+		insert into  domain_syslog (loglevel,className,method,msg,createtime) values(#{loglevel},#{classname},#{method},#{msg},#{createtime})	
+	</insert>
+
+	<update id="update" parameterType="com.domain.pojo.DomainSyslog">
+		update domain_syslog
+		<set>
+			<if test="loglevel!=null">loglevel = #{loglevel},</if>
+			<if test="classname!=null">className = #{classname},</if>
+			<if test="method!=null">method = #{method},</if>
+			<if test="msg!=null">msg = #{msg},</if>
+			<if test="createtime!=null">createtime = #{createtime}</if>
+		</set>
+		where id = #{id}
+	</update>
+
+	<delete id="delete" parameterType="com.domain.pojo.DomainSyslog">
+		delete from domain_syslog where 1=1
+			<if test="id != null"> and id = #{id}</if>
+			<if test="loglevel != null"> and loglevel = #{loglevel}</if>
+			<if test="classname != null"> and className = #{classname}</if>
+			<if test="method != null"> and method = #{method}</if>
+			<if test="msg != null"> and msg = #{msg}</if>
+			<if test="createtime != null"> and createtime = #{createtime}</if>
+	</delete>
+
+	<select id="select" resultMap="DomainSyslogMap" parameterType="com.domain.pojo.DomainSyslog">
+		select * from domain_syslog where 1 = 1
+			<if test="id != null"> and id = #{id}</if>
+			<if test="loglevel != null"> and loglevel = #{loglevel}</if>
+			<if test="classname != null"> and className = #{classname}</if>
+			<if test="method != null"> and method = #{method}</if>
+			<if test="msg != null"> and msg = #{msg}</if>
+			<if test="createtime != null"> and createtime = #{createtime}</if>
+	</select>
+
+	<select id="selectByParam" resultMap="DomainSyslogMap" parameterType="java.util.Map">
+		select  <if test="field != null and field != ''"> ${field}</if>  <if test="field == null or field == ''"> * </if>     from domain_syslog <if test="param != null and param != ''">where ${param}</if>
+	</select>
+
+	<delete id="deleteByParam" parameterType="java.util.Map">
+		delete from domain_syslog  <if test="param != null and param != ''">where ${param}</if>
+	</delete>
+
+	<update id="updateByParam" parameterType="java.util.Map">
+		<if test="param != null and param !=''">update domain_syslog set ${param}</if>
+	</update>
+
+</mapper>

@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/ruicloud/!svn/ver/4718/trunk/xrdomain/src/main/java/com/domain/service
+END
+DomainPriceService.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ruicloud/!svn/ver/3856/trunk/xrdomain/src/main/java/com/domain/service/DomainPriceService.java
+END
+DomainResolveListService.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/service/DomainResolveListService.java
+END
+InstantiationTracingBeanPostProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/ruicloud/!svn/ver/3657/trunk/xrdomain/src/main/java/com/domain/service/InstantiationTracingBeanPostProcessor.java
+END
+DomainSslService.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ruicloud/!svn/ver/4494/trunk/xrdomain/src/main/java/com/domain/service/DomainSslService.java
+END
+UserCoreAccessService.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/ruicloud/!svn/ver/4024/trunk/xrdomain/src/main/java/com/domain/service/UserCoreAccessService.java
+END
+DomainNameService.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/service/DomainNameService.java
+END
+DomainTransferService.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/service/DomainTransferService.java
+END
+UserAccessService.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ruicloud/!svn/ver/4024/trunk/xrdomain/src/main/java/com/domain/service/UserAccessService.java
+END
+DomainSslMaterialService.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/ruicloud/!svn/ver/4494/trunk/xrdomain/src/main/java/com/domain/service/DomainSslMaterialService.java
+END
+DomianCartService.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/service/DomianCartService.java
+END
+YrComperService.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ruicloud/!svn/ver/3850/trunk/xrdomain/src/main/java/com/domain/service/YrComperService.java
+END
+DomainEmailService.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/service/DomainEmailService.java
+END
+DomainRoleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ruicloud/!svn/ver/3315/trunk/xrdomain/src/main/java/com/domain/service/DomainRoleService.java
+END
+DomainSyslogService.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/service/DomainSyslogService.java
+END
+DomainAuthenticationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/service/DomainAuthenticationService.java
+END
+DomainTemplateService.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/ruicloud/!svn/ver/4013/trunk/xrdomain/src/main/java/com/domain/service/DomainTemplateService.java
+END
+OrderTableService.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ruicloud/!svn/ver/3850/trunk/xrdomain/src/main/java/com/domain/service/OrderTableService.java
+END
+DomainConfigureService.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/service/DomainConfigureService.java
+END
+DomainOperatelogService.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/ruicloud/!svn/ver/4552/trunk/xrdomain/src/main/java/com/domain/service/DomainOperatelogService.java
+END

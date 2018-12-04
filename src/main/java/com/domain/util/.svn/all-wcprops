@@ -1,0 +1,299 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/ruicloud/!svn/ver/5071/trunk/xrdomain/src/main/java/com/domain/util
+END
+JobStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/JobStatus.java
+END
+ExptNum.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ruicloud/!svn/ver/4718/trunk/xrdomain/src/main/java/com/domain/util/ExptNum.java
+END
+Base64.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/Base64.java
+END
+HttpUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/ruicloud/!svn/ver/3997/trunk/xrdomain/src/main/java/com/domain/util/HttpUtil.java
+END
+QueryConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/QueryConfig.java
+END
+HttpContextUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/HttpContextUtils.java
+END
+JSONUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ruicloud/!svn/ver/4485/trunk/xrdomain/src/main/java/com/domain/util/JSONUtils.java
+END
+HttpUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/HttpUtils.java
+END
+RequestDumperFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/RequestDumperFilter.java
+END
+DomainUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ruicloud/!svn/ver/4780/trunk/xrdomain/src/main/java/com/domain/util/DomainUtil.java
+END
+CorsFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/CorsFilter.java
+END
+CustomerCookiesSerializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/CustomerCookiesSerializer.java
+END
+ResponseBody.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/ResponseBody.java
+END
+Random.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/Random.java
+END
+GetRemoteIp.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/ruicloud/!svn/ver/4527/trunk/xrdomain/src/main/java/com/domain/util/GetRemoteIp.java
+END
+DesUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/ruicloud/!svn/ver/4234/trunk/xrdomain/src/main/java/com/domain/util/DesUtils.java
+END
+MD5.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/MD5.java
+END
+FileUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/FileUtil.java
+END
+WebUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/WebUtils.java
+END
+Uuid.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/Uuid.java
+END
+XMLUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/XMLUtils.java
+END
+XmlUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/XmlUtil.java
+END
+MyJSON.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/MyJSON.java
+END
+ApiTool.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ruicloud/!svn/ver/5056/trunk/xrdomain/src/main/java/com/domain/util/ApiTool.java
+END
+HttpSendUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/ruicloud/!svn/ver/3856/trunk/xrdomain/src/main/java/com/domain/util/HttpSendUtil.java
+END
+ExceptionUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/ruicloud/!svn/ver/4874/trunk/xrdomain/src/main/java/com/domain/util/ExceptionUtil.java
+END
+TimeUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/TimeUtil.java
+END
+HttpRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/HttpRequest.java
+END
+NormName.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/NormName.java
+END
+MyX509TrustManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ruicloud/!svn/ver/4013/trunk/xrdomain/src/main/java/com/domain/util/MyX509TrustManager.java
+END
+AddOprateloUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/ruicloud/!svn/ver/5071/trunk/xrdomain/src/main/java/com/domain/util/AddOprateloUtil.java
+END
+Prop.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/Prop.java
+END
+Cache.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/Cache.java
+END
+Config.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ruicloud/!svn/ver/4624/trunk/xrdomain/src/main/java/com/domain/util/Config.java
+END
+MD5Util.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/MD5Util.java
+END
+SignUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/SignUtil.java
+END
+FcUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ruicloud/!svn/ver/4874/trunk/xrdomain/src/main/java/com/domain/util/FcUtil.java
+END
+ParamIsNull.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/ParamIsNull.java
+END
+BodyReaderHttpServletRequestWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/BodyReaderHttpServletRequestWrapper.java
+END
+WebConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/WebConstants.java
+END
+ExcelUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ruicloud/!svn/ver/3326/trunk/xrdomain/src/main/java/com/domain/util/ExcelUtil.java
+END
+RspData.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ruicloud/!svn/ver/4874/trunk/xrdomain/src/main/java/com/domain/util/RspData.java
+END
+WebUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/WebUtil.java
+END
+HttpReq.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ruicloud/!svn/ver/5059/trunk/xrdomain/src/main/java/com/domain/util/HttpReq.java
+END
+MappingConfigura.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/ruicloud/!svn/ver/5053/trunk/xrdomain/src/main/java/com/domain/util/MappingConfigura.java
+END
+GlobalAttr.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ruicloud/!svn/ver/5059/trunk/xrdomain/src/main/java/com/domain/util/GlobalAttr.java
+END
+GetResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/GetResult.java
+END
+SetCharacterEncodingFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/SetCharacterEncodingFilter.java
+END
+SFTPUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/ruicloud/!svn/ver/3234/trunk/xrdomain/src/main/java/com/domain/util/SFTPUtil.java
+END

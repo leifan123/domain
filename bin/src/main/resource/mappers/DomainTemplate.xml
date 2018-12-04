@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.domain.dao.DomainTemplateDao">
+
+	<resultMap id="DomainTemplateMap" type="com.domain.pojo.DomainTemplate">
+		<id property="id" column="id"/>
+		<result property="companyid" column="companyId"/>
+		<result property="userid" column="userid"/>
+		<result property="companyCn" column="company_cn"/>
+		<result property="lastnameCn" column="lastname_cn"/>
+		<result property="firstnameCn" column="firstname_cn"/>
+		<result property="countryCn" column="country_cn"/>
+		<result property="stateCn" column="state_cn"/>
+		<result property="cityCn" column="city_cn"/>
+		<result property="addressCn" column="address_cn"/>
+		<result property="lastnameEn" column="lastname_en"/>
+		<result property="firstnameEn" column="firstname_en"/>
+		<result property="countyEn" column="county_en"/>
+		<result property="stateEn" column="state_en"/>
+		<result property="cityEn" column="city_en"/>
+		<result property="addressEn" column="address_en"/>
+		<result property="zipcode" column="zipcode"/>
+		<result property="phone" column="phone"/>
+		<result property="fax" column="fax"/>
+		<result property="email" column="email"/>
+		<result property="usertype" column="usertype"/>
+		<result property="idtype" column="idtype"/>
+		<result property="idnumber" column="idnumber"/>
+		<result property="isdefault" column="isdefault"/>
+		<result property="ischecked" column="ischecked"/>
+		<result property="isforbidden" column="isforbidden"/>
+		<result property="regtime" column="regtime"/>
+		<result property="creattime" column="creattime"/>
+		<result property="updatetime" column="updatetime"/>
+		<result property="role" column="role"/>
+		
+	</resultMap>
+
+	<insert id="insert"  useGeneratedKeys="true" keyProperty="id"  parameterType="com.domain.pojo.DomainTemplate">
+		insert into  domain_template (companyId,userid,company_cn,lastname_cn,firstname_cn,country_cn,state_cn,city_cn,address_cn,lastname_en,firstname_en,county_en,state_en,city_en,address_en,zipcode,phone,fax,email,usertype,idtype,idnumber,isdefault,ischecked,isforbidden,regtime,creattime,updatetime,role) values(#{companyid},#{userid},#{companyCn},#{lastnameCn},#{firstnameCn},#{countryCn},#{stateCn},#{cityCn},#{addressCn},#{lastnameEn},#{firstnameEn},#{countyEn},#{stateEn},#{cityEn},#{addressEn},#{zipcode},#{phone},#{fax},#{email},#{usertype},#{idtype},#{idnumber},#{isdefault},#{ischecked},#{isforbidden},#{regtime},#{creattime},#{updatetime},#{role})	
+	</insert>
+
+	<update id="update" parameterType="com.domain.pojo.DomainTemplate">
+		update domain_template
+		<set>
+			<if test="companyid!=null">companyId = #{companyid},</if>
+			<if test="userid!=null">userid = #{userid},</if>
+			<if test="companyCn!=null">company_cn = #{companyCn},</if>
+			<if test="lastnameCn!=null">lastname_cn = #{lastnameCn},</if>
+			<if test="firstnameCn!=null">firstname_cn = #{firstnameCn},</if>
+			<if test="countryCn!=null">country_cn = #{countryCn},</if>
+			<if test="stateCn!=null">state_cn = #{stateCn},</if>
+			<if test="cityCn!=null">city_cn = #{cityCn},</if>
+			<if test="addressCn!=null">address_cn = #{addressCn},</if>
+			<if test="lastnameEn!=null">lastname_en = #{lastnameEn},</if>
+			<if test="firstnameEn!=null">firstname_en = #{firstnameEn},</if>
+			<if test="countyEn!=null">county_en = #{countyEn},</if>
+			<if test="stateEn!=null">state_en = #{stateEn},</if>
+			<if test="cityEn!=null">city_en = #{cityEn},</if>
+			<if test="addressEn!=null">address_en = #{addressEn},</if>
+			<if test="zipcode!=null">zipcode = #{zipcode},</if>
+			<if test="phone!=null">phone = #{phone},</if>
+			<if test="fax!=null">fax = #{fax},</if>
+			<if test="email!=null">email = #{email},</if>
+			<if test="usertype!=null">usertype = #{usertype},</if>
+			<if test="idtype!=null">idtype = #{idtype},</if>
+			<if test="idnumber!=null">idnumber = #{idnumber},</if>
+			<if test="isdefault!=null">isdefault = #{isdefault},</if>
+			<if test="ischecked!=null">ischecked = #{ischecked},</if>
+			<if test="isforbidden!=null">isforbidden = #{isforbidden},</if>
+			<if test="regtime!=null">regtime = #{regtime},</if>
+			<if test="creattime!=null">creattime = #{creattime},</if>
+			<if test="updatetime!=null">updatetime = #{updatetime},</if>
+			<if test="role!=null">role = #{role}</if>
+		</set>
+		where id = #{id}
+	</update>
+
+	<delete id="delete" parameterType="com.domain.pojo.DomainTemplate">
+		delete from domain_template where 1=1
+			<if test="id != null"> and id = #{id}</if>
+			<if test="companyid != null"> and companyId = #{companyid}</if>
+			<if test="userid != null"> and userid = #{userid}</if>
+			<if test="companyCn != null"> and company_cn = #{companyCn}</if>
+			<if test="lastnameCn != null"> and lastname_cn = #{lastnameCn}</if>
+			<if test="firstnameCn != null"> and firstname_cn = #{firstnameCn}</if>
+			<if test="countryCn != null"> and country_cn = #{countryCn}</if>
+			<if test="stateCn != null"> and state_cn = #{stateCn}</if>
+			<if test="cityCn != null"> and city_cn = #{cityCn}</if>
+			<if test="addressCn != null"> and address_cn = #{addressCn}</if>
+			<if test="lastnameEn != null"> and lastname_en = #{lastnameEn}</if>
+			<if test="firstnameEn != null"> and firstname_en = #{firstnameEn}</if>
+			<if test="countyEn != null"> and county_en = #{countyEn}</if>
+			<if test="stateEn != null"> and state_en = #{stateEn}</if>
+			<if test="cityEn != null"> and city_en = #{cityEn}</if>
+			<if test="addressEn != null"> and address_en = #{addressEn}</if>
+			<if test="zipcode != null"> and zipcode = #{zipcode}</if>
+			<if test="phone != null"> and phone = #{phone}</if>
+			<if test="fax != null"> and fax = #{fax}</if>
+			<if test="email != null"> and email = #{email}</if>
+			<if test="usertype != null"> and usertype = #{usertype}</if>
+			<if test="idtype != null"> and idtype = #{idtype}</if>
+			<if test="idnumber != null"> and idnumber = #{idnumber}</if>
+			<if test="isdefault != null"> and isdefault = #{isdefault}</if>
+			<if test="ischecked != null"> and ischecked = #{ischecked}</if>
+			<if test="isforbidden != null"> and isforbidden = #{isforbidden}</if>
+			<if test="regtime != null"> and regtime = #{regtime}</if>
+			<if test="creattime != null"> and creattime = #{creattime}</if>
+			<if test="updatetime != null"> and updatetime = #{updatetime}</if>
+			<if test="role != null"> and role = #{role}</if>
+	</delete>
+
+	<select id="select" resultMap="DomainTemplateMap" parameterType="com.domain.pojo.DomainTemplate">
+		select * from domain_template where 1 = 1
+			<if test="id != null"> and id = #{id}</if>
+			<if test="companyid != null"> and companyId = #{companyid}</if>
+			<if test="userid != null"> and userid = #{userid}</if>
+			<if test="companyCn != null"> and company_cn = #{companyCn}</if>
+			<if test="lastnameCn != null"> and lastname_cn = #{lastnameCn}</if>
+			<if test="firstnameCn != null"> and firstname_cn = #{firstnameCn}</if>
+			<if test="countryCn != null"> and country_cn = #{countryCn}</if>
+			<if test="stateCn != null"> and state_cn = #{stateCn}</if>
+			<if test="cityCn != null"> and city_cn = #{cityCn}</if>
+			<if test="addressCn != null"> and address_cn = #{addressCn}</if>
+			<if test="lastnameEn != null"> and lastname_en = #{lastnameEn}</if>
+			<if test="firstnameEn != null"> and firstname_en = #{firstnameEn}</if>
+			<if test="countyEn != null"> and county_en = #{countyEn}</if>
+			<if test="stateEn != null"> and state_en = #{stateEn}</if>
+			<if test="cityEn != null"> and city_en = #{cityEn}</if>
+			<if test="addressEn != null"> and address_en = #{addressEn}</if>
+			<if test="zipcode != null"> and zipcode = #{zipcode}</if>
+			<if test="phone != null"> and phone = #{phone}</if>
+			<if test="fax != null"> and fax = #{fax}</if>
+			<if test="email != null"> and email = #{email}</if>
+			<if test="usertype != null"> and usertype = #{usertype}</if>
+			<if test="idtype != null"> and idtype = #{idtype}</if>
+			<if test="idnumber != null"> and idnumber = #{idnumber}</if>
+			<if test="isdefault != null"> and isdefault = #{isdefault}</if>
+			<if test="ischecked != null"> and ischecked = #{ischecked}</if>
+			<if test="isforbidden != null"> and isforbidden = #{isforbidden}</if>
+			<if test="regtime != null"> and regtime = #{regtime}</if>
+			<if test="creattime != null"> and creattime = #{creattime}</if>
+			<if test="updatetime != null"> and updatetime = #{updatetime}</if>
+			<if test="role != null"> and role = #{role}</if>
+			
+	</select>
+
+	<select id="selectByParam" resultMap="DomainTemplateMap" parameterType="java.util.Map">
+		select  <if test="field != null and field != ''"> ${field}</if>  <if test="field == null or field == ''"> * </if>     from domain_template <if test="param != null and param != ''">where ${param}</if>
+	</select>
+
+	<delete id="deleteByParam" parameterType="java.util.Map">
+		delete from domain_template  <if test="param != null and param != ''">where ${param}</if>
+	</delete>
+
+	<update id="updateByParam" parameterType="java.util.Map">
+		<if test="param != null and param !=''">update domain_template set ${param}</if>
+	</update>
+
+</mapper>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.domain.dao.OrderTableDao">
+
+	<resultMap id="OrderTableMap" type="com.domain.pojo.OrderTable">
+		<id property="id" column="id"/>
+		<result property="companyid" column="companyId"/>
+		<result property="companyname" column="companyName"/>
+		<result property="ordernumber" column="orderNumber"/>
+		<result property="ordercreatetime" column="orderCreateTime"/>
+		<result property="orderendtime" column="orderEndTime"/>
+		<result property="paymentstatus" column="paymentStatus"/>
+		<result property="display" column="display"/>
+		<result property="configure" column="configure"/>
+		<result property="cost" column="cost"/>
+		<result property="goodstype" column="goodsType"/>
+		<result property="count" column="count"/>
+		<result property="dele" column="dele"/>
+		<result property="ticket" column="ticket"/>
+		<result property="remark" column="remark"/>
+		<result property="countorder" column="countOrder"/>
+		<result property="originalcost" column="originalcost"/>
+		<result property="discountmessage" column="discountMessage"/>
+		<result property="teamleadercompanyid" column="teamLeaderCompanyId"/>
+		<result property="discountedorders" column="discountedOrders"/>
+		<result property="discountforactivity" column="discountForActivity"/>
+	</resultMap>
+
+	<insert id="insert"  useGeneratedKeys="true" keyProperty="id"  parameterType="com.domain.pojo.OrderTable">
+		insert into  order_table (companyId,companyName,orderNumber,orderCreateTime,orderEndTime,paymentStatus,display,configure,cost,goodsType,count,dele,ticket,remark,countOrder,originalcost,discountMessage,teamLeaderCompanyId,discountedOrders,discountForActivity) values(#{companyid},#{companyname},#{ordernumber},#{ordercreatetime},#{orderendtime},#{paymentstatus},#{display},#{configure},#{cost},#{goodstype},#{count},#{dele},#{ticket},#{remark},#{countorder},#{originalcost},#{discountmessage},#{teamleadercompanyid},#{discountedorders},#{discountforactivity})	
+	</insert>
+
+	<update id="update" parameterType="com.domain.pojo.OrderTable">
+		update order_table
+		<set>
+			<if test="companyid!=null">companyId = #{companyid},</if>
+			<if test="companyname!=null">companyName = #{companyname},</if>
+			<if test="ordernumber!=null">orderNumber = #{ordernumber},</if>
+			<if test="ordercreatetime!=null">orderCreateTime = #{ordercreatetime},</if>
+			<if test="orderendtime!=null">orderEndTime = #{orderendtime},</if>
+			<if test="paymentstatus!=null">paymentStatus = #{paymentstatus},</if>
+			<if test="display!=null">display = #{display},</if>
+			<if test="configure!=null">configure = #{configure},</if>
+			<if test="cost!=null">cost = #{cost},</if>
+			<if test="goodstype!=null">goodsType = #{goodstype},</if>
+			<if test="count!=null">count = #{count},</if>
+			<if test="dele!=null">dele = #{dele},</if>
+			<if test="ticket!=null">ticket = #{ticket},</if>
+			<if test="remark!=null">remark = #{remark},</if>
+			<if test="countorder!=null">countOrder = #{countorder},</if>
+			<if test="originalcost!=null">originalcost = #{originalcost},</if>
+			<if test="discountmessage!=null">discountMessage = #{discountmessage},</if>
+			<if test="teamleadercompanyid!=null">teamLeaderCompanyId = #{teamleadercompanyid},</if>
+			<if test="discountedorders!=null">discountedOrders = #{discountedorders},</if>
+			<if test="discountforactivity!=null">discountForActivity = #{discountforactivity}</if>
+		</set>
+		where id = #{id}
+	</update>
+
+	<delete id="delete" parameterType="com.domain.pojo.OrderTable">
+		delete from order_table where 1=1
+			<if test="id != null"> and id = #{id}</if>
+			<if test="companyid != null"> and companyId = #{companyid}</if>
+			<if test="companyname != null"> and companyName = #{companyname}</if>
+			<if test="ordernumber != null"> and orderNumber = #{ordernumber}</if>
+			<if test="ordercreatetime != null"> and orderCreateTime = #{ordercreatetime}</if>
+			<if test="orderendtime != null"> and orderEndTime = #{orderendtime}</if>
+			<if test="paymentstatus != null"> and paymentStatus = #{paymentstatus}</if>
+			<if test="display != null"> and display = #{display}</if>
+			<if test="configure != null"> and configure = #{configure}</if>
+			<if test="cost != null"> and cost = #{cost}</if>
+			<if test="goodstype != null"> and goodsType = #{goodstype}</if>
+			<if test="count != null"> and count = #{count}</if>
+			<if test="dele != null"> and dele = #{dele}</if>
+			<if test="ticket != null"> and ticket = #{ticket}</if>
+			<if test="remark != null"> and remark = #{remark}</if>
+			<if test="countorder != null"> and countOrder = #{countorder}</if>
+			<if test="originalcost != null"> and originalcost = #{originalcost}</if>
+			<if test="discountmessage != null"> and discountMessage = #{discountmessage}</if>
+			<if test="teamleadercompanyid != null"> and teamLeaderCompanyId = #{teamleadercompanyid}</if>
+			<if test="discountedorders != null"> and discountedOrders = #{discountedorders}</if>
+			<if test="discountforactivity != null"> and discountForActivity = #{discountforactivity}</if>
+	</delete>
+
+	<select id="select" resultMap="OrderTableMap" parameterType="com.domain.pojo.OrderTable">
+		select * from order_table where 1 = 1
+			<if test="id != null"> and id = #{id}</if>
+			<if test="companyid != null"> and companyId = #{companyid}</if>
+			<if test="companyname != null"> and companyName = #{companyname}</if>
+			<if test="ordernumber != null"> and orderNumber = #{ordernumber}</if>
+			<if test="ordercreatetime != null"> and orderCreateTime = #{ordercreatetime}</if>
+			<if test="orderendtime != null"> and orderEndTime = #{orderendtime}</if>
+			<if test="paymentstatus != null"> and paymentStatus = #{paymentstatus}</if>
+			<if test="display != null"> and display = #{display}</if>
+			<if test="configure != null"> and configure = #{configure}</if>
+			<if test="cost != null"> and cost = #{cost}</if>
+			<if test="goodstype != null"> and goodsType = #{goodstype}</if>
+			<if test="count != null"> and count = #{count}</if>
+			<if test="dele != null"> and dele = #{dele}</if>
+			<if test="ticket != null"> and ticket = #{ticket}</if>
+			<if test="remark != null"> and remark = #{remark}</if>
+			<if test="countorder != null"> and countOrder = #{countorder}</if>
+			<if test="originalcost != null"> and originalcost = #{originalcost}</if>
+			<if test="discountmessage != null"> and discountMessage = #{discountmessage}</if>
+			<if test="teamleadercompanyid != null"> and teamLeaderCompanyId = #{teamleadercompanyid}</if>
+			<if test="discountedorders != null"> and discountedOrders = #{discountedorders}</if>
+			<if test="discountforactivity != null"> and discountForActivity = #{discountforactivity}</if>
+	</select>
+
+	<select id="selectByParam" resultMap="OrderTableMap" parameterType="java.util.Map">
+		select  <if test="field != null and field != ''"> ${field}</if>  <if test="field == null or field == ''"> * </if>     from order_table <if test="param != null and param != ''">where ${param}</if>
+	</select>
+
+	<delete id="deleteByParam" parameterType="java.util.Map">
+		delete from order_table  <if test="param != null and param != ''">where ${param}</if>
+	</delete>
+
+	<update id="updateByParam" parameterType="java.util.Map">
+		<if test="param != null and param !=''">update order_table set ${param}</if>
+	</update>
+
+</mapper>

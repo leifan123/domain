@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.domain.dao.DomainPriceDao">
+
+	<resultMap id="DomainPriceMap" type="com.domain.pojo.DomainPrice">
+		<id property="id" column="id"/>
+		<result property="domainType" column="domain_type"/>
+		<result property="firstyearprice" column="firstYearPrice"/>
+		<result property="renew" column="renew"/>
+		<result property="renewmei" column="renewmei"/>
+		<result property="mctransfer" column="mctransfer"/>
+		<result property="adjusttransfer" column="adjustTransfer"/>
+		<result property="mcpurchase" column="mcpurchase"/>
+		<result property="adjustpurchase" column="adjustPurchase"/>
+		<result property="type" column="type"/>
+	</resultMap>
+
+	<insert id="insert"  useGeneratedKeys="true" keyProperty="id"  parameterType="com.domain.pojo.DomainPrice">
+		insert into  domain_price (domain_type,firstYearPrice,renew,renewmei,mctransfer,adjustTransfer,mcpurchase,adjustPurchase,type) values(#{domainType},#{firstyearprice},#{renew},#{renewmei},#{mctransfer},#{adjusttransfer},#{mcpurchase},#{adjustpurchase},#{type})	
+	</insert>
+
+	<update id="update" parameterType="com.domain.pojo.DomainPrice">
+		update domain_price
+		<set>
+			<if test="domainType!=null">domain_type = #{domainType},</if>
+			<if test="firstyearprice!=null">firstYearPrice = #{firstyearprice},</if>
+			<if test="renew!=null">renew = #{renew},</if>
+			<if test="renewmei!=null">renewmei = #{renewmei},</if>
+			<if test="mctransfer!=null">mctransfer = #{mctransfer},</if>
+			<if test="adjusttransfer!=null">adjustTransfer = #{adjusttransfer},</if>
+			<if test="mcpurchase!=null">mcpurchase = #{mcpurchase},</if>
+			<if test="adjustpurchase!=null">adjustPurchase = #{adjustpurchase},</if>
+			<if test="type!=null">type = #{type}</if>
+		</set>
+		where id = #{id}
+	</update>
+
+	<delete id="delete" parameterType="com.domain.pojo.DomainPrice">
+		delete from domain_price where 1=1
+			<if test="id != null"> and id = #{id}</if>
+			<if test="domainType != null"> and domain_type = #{domainType}</if>
+			<if test="firstyearprice != null"> and firstYearPrice = #{firstyearprice}</if>
+			<if test="renew != null"> and renew = #{renew}</if>
+			<if test="renewmei!=null"> and renewmei = #{renewmei}</if>
+			<if test="mctransfer != null"> and mctransfer = #{mctransfer}</if>
+			<if test="adjusttransfer != null"> and adjustTransfer = #{adjusttransfer}</if>
+			<if test="mcpurchase != null"> and mcpurchase = #{mcpurchase}</if>
+			<if test="adjustpurchase != null"> and adjustPurchase = #{adjustpurchase}</if>
+			<if test="type != null"> and type = #{type}</if>
+	</delete>
+
+	<select id="select" resultMap="DomainPriceMap" parameterType="com.domain.pojo.DomainPrice">
+		select * from domain_price where 1 = 1
+			<if test="id != null"> and id = #{id}</if>
+			<if test="domainType != null"> and domain_type = #{domainType}</if>
+			<if test="firstyearprice != null"> and firstYearPrice = #{firstyearprice}</if>
+			<if test="renew != null"> and renew = #{renew}</if>
+			<if test="renewmei!=null"> and renewmei = #{renewmei}</if>
+			<if test="mctransfer != null"> and mctransfer = #{mctransfer}</if>
+			<if test="adjusttransfer != null"> and adjustTransfer = #{adjusttransfer}</if>
+			<if test="mcpurchase != null"> and mcpurchase = #{mcpurchase}</if>
+			<if test="adjustpurchase != null"> and adjustPurchase = #{adjustpurchase}</if>
+			<if test="type != null"> and type = #{type}</if>
+	</select>
+
+	<select id="insertDomain" parameterType="java.util.List">
+		insert into domain_price(renewmei)  values
+		<foreach collection="list" item="renewmei" separator="," open="(" close=")">
+			#{renewmei}
+		</foreach>
+	</select>
+
+	<select id="selectByParam" resultMap="DomainPriceMap" parameterType="java.util.Map">
+		select  <if test="field != null and field != ''"> ${field}</if>  <if test="field == null or field == ''"> * </if>     from domain_price <if test="param != null and param != ''">where ${param}</if>
+	</select>
+
+	<delete id="deleteByParam" parameterType="java.util.Map">
+		delete from domain_price  <if test="param != null and param != ''">where ${param}</if>
+	</delete>
+
+	<update id="updateByParam" parameterType="java.util.Map">
+		<if test="param != null and param !=''">update domain_price set ${param}</if>
+	</update>
+
+</mapper>

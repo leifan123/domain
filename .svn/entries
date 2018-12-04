@@ -1,0 +1,117 @@
+10
+
+dir
+5091
+http://192.168.31.144/svn/ruicloud/trunk/xrdomain
+http://192.168.31.144/svn/ruicloud
+
+
+
+2018-11-30T10:30:59.166302Z
+5089
+leifan
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a06c885a-3c23-44de-8611-09e96204493f
+
+.classpath
+file
+
+
+
+
+
+c622e5cb4fa7d2d55a5c543d5bee17aa
+2018-09-05T09:11:54.226277Z
+3499
+daiyulong
+has-props
+
+
+
+
+.classpath.r3293
+.classpath.r3574
+.classpath.mine
+
+.project
+file
+
+
+
+
+2018-09-11T01:23:05.620000Z
+f64d7264a71ce13f26fe5820a208e0e9
+2018-09-05T09:11:54.226277Z
+3499
+daiyulong
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1262
+
+.settings
+dir
+
+pom.xml
+file
+
+
+
+
+
+1dc2acaec53ced6cb6946b38f254cfdb
+2018-10-22T01:39:19.704243Z
+4175
+tanshunting
+has-props
+
+src
+dir
+
+tag
+dir
+
+target
+dir
+
+trunk
+dir
+
+xrdomain.iml
+file
+0
+
+
+add
+

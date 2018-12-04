@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.domain.dao.DomainTransferDao">
+
+	<resultMap id="DomainTransferMap" type="com.domain.pojo.DomainTransfer">
+		<id property="id" column="id"/>
+		<result property="companyid" column="companyId"/>
+		<result property="domainname" column="domainname"/>
+		<result property="userid" column="userid"/>
+		<result property="authcode" column="authcode"/>
+		<result property="mcdns" column="mcdns"/>
+		<result property="bounddomain" column="Bounddomain"/>
+		<result property="signature" column="signature"/>
+		<result property="jm" column="jm"/>
+		<result property="createtime" column="createTime"/>
+		<result property="endtime" column="endTime"/>
+		<result property="remark" column="remark"/>
+		<result property="status" column="status"/>
+		<result property="msg" column="msg"/>
+	</resultMap>
+
+	<insert id="insert"  useGeneratedKeys="true" keyProperty="id"  parameterType="com.domain.pojo.DomainTransfer">
+		insert into  domain_transfer (companyId,domainname,userid,authcode,mcdns,Bounddomain,signature,jm,createTime,endTime,remark,status,msg) values(#{companyid},#{domainname},#{userid},#{authcode},#{mcdns},#{bounddomain},#{signature},#{jm},#{createtime},#{endtime},#{remark},#{status},#{msg})	
+	</insert>
+
+	<update id="update" parameterType="com.domain.pojo.DomainTransfer">
+		update domain_transfer
+		<set>
+			<if test="companyid!=null">companyId = #{companyid},</if>
+			<if test="domainname!=null">domainname = #{domainname},</if>
+			<if test="userid!=null">userid = #{userid},</if>
+			<if test="authcode!=null">authcode = #{authcode},</if>
+			<if test="mcdns!=null">mcdns = #{mcdns},</if>
+			<if test="bounddomain!=null">Bounddomain = #{bounddomain},</if>
+			<if test="signature!=null">signature = #{signature},</if>
+			<if test="jm!=null">jm = #{jm},</if>
+			<if test="createtime!=null">createTime = #{createtime},</if>
+			<if test="endtime!=null">endTime = #{endtime},</if>
+			<if test="remark!=null">remark = #{remark},</if>
+			<if test="status!=null">status = #{status},</if>
+			<if test="msg!=null">msg = #{msg}</if>
+		</set>
+		where id = #{id}
+	</update>
+
+	<delete id="delete" parameterType="com.domain.pojo.DomainTransfer">
+		delete from domain_transfer where 1=1
+			<if test="id != null"> and id = #{id}</if>
+			<if test="companyid != null"> and companyId = #{companyid}</if>
+			<if test="domainname != null"> and domainname = #{domainname}</if>
+			<if test="userid != null"> and userid = #{userid}</if>
+			<if test="authcode != null"> and authcode = #{authcode}</if>
+			<if test="mcdns != null"> and mcdns = #{mcdns}</if>
+			<if test="bounddomain != null"> and Bounddomain = #{bounddomain}</if>
+			<if test="signature != null"> and signature = #{signature}</if>
+			<if test="jm != null"> and jm = #{jm}</if>
+			<if test="createtime != null"> and createTime = #{createtime}</if>
+			<if test="endtime != null"> and endTime = #{endtime}</if>
+			<if test="remark != null"> and remark = #{remark}</if>
+			<if test="status != null"> and status = #{status}</if>
+			<if test="msg != null"> and msg = #{msg}</if>
+	</delete>
+
+	<select id="select" resultMap="DomainTransferMap" parameterType="com.domain.pojo.DomainTransfer">
+		select * from domain_transfer where 1 = 1
+			<if test="id != null"> and id = #{id}</if>
+			<if test="companyid != null"> and companyId = #{companyid}</if>
+			<if test="domainname != null"> and domainname = #{domainname}</if>
+			<if test="userid != null"> and userid = #{userid}</if>
+			<if test="authcode != null"> and authcode = #{authcode}</if>
+			<if test="mcdns != null"> and mcdns = #{mcdns}</if>
+			<if test="bounddomain != null"> and Bounddomain = #{bounddomain}</if>
+			<if test="signature != null"> and signature = #{signature}</if>
+			<if test="jm != null"> and jm = #{jm}</if>
+			<if test="createtime != null"> and createTime = #{createtime}</if>
+			<if test="endtime != null"> and endTime = #{endtime}</if>
+			<if test="remark != null"> and remark = #{remark}</if>
+			<if test="status != null"> and status = #{status}</if>
+			<if test="msg != null"> and msg = #{msg}</if>
+	</select>
+
+	<select id="selectByParam" resultMap="DomainTransferMap" parameterType="java.util.Map">
+		select  <if test="field != null and field != ''"> ${field}</if>  <if test="field == null or field == ''"> * </if>     from domain_transfer <if test="param != null and param != ''">where ${param}</if>
+	</select>
+
+	<delete id="deleteByParam" parameterType="java.util.Map">
+		delete from domain_transfer  <if test="param != null and param != ''">where ${param}</if>
+	</delete>
+
+	<update id="updateByParam" parameterType="java.util.Map">
+		<if test="param != null and param !=''">update domain_transfer set ${param}</if>
+	</update>
+
+</mapper>

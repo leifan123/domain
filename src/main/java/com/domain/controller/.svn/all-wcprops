@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/ruicloud/!svn/ver/5089/trunk/xrdomain/src/main/java/com/domain/controller
+END
+DomainController.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/ruicloud/!svn/ver/5094/trunk/xrdomain/src/main/java/com/domain/controller/DomainController.java
+END
+DomainTransferController.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/ruicloud/!svn/ver/5055/trunk/xrdomain/src/main/java/com/domain/controller/DomainTransferController.java
+END
+DomainOpratelogController.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/ruicloud/!svn/ver/5061/trunk/xrdomain/src/main/java/com/domain/controller/DomainOpratelogController.java
+END
+DomainTemplateController.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/ruicloud/!svn/ver/3342/trunk/xrdomain/src/main/java/com/domain/controller/DomainTemplateController.java
+END
+UserController.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ruicloud/!svn/ver/4088/trunk/xrdomain/src/main/java/com/domain/controller/UserController.java
+END
+TemplateController.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/ruicloud/!svn/ver/5094/trunk/xrdomain/src/main/java/com/domain/controller/TemplateController.java
+END
+DomainResolveController.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/ruicloud/!svn/ver/5076/trunk/xrdomain/src/main/java/com/domain/controller/DomainResolveController.java
+END
+DomainSSLController.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/ruicloud/!svn/ver/4948/trunk/xrdomain/src/main/java/com/domain/controller/DomainSSLController.java
+END
+DomainEmailValidation.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/ruicloud/!svn/ver/5035/trunk/xrdomain/src/main/java/com/domain/controller/DomainEmailValidation.java
+END

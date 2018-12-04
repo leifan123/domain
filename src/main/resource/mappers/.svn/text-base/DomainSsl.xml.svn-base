@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.domain.dao.DomainSslDao">
+
+	<resultMap id="DomainSslMap" type="com.domain.pojo.DomainSsl">
+		<id property="id" column="id"/>
+		<result property="certtypeid" column="certTypeId"/>
+		<result property="companyid" column="companyId"/>
+		<result property="certencrypttype" column="certencryptType"/>
+		<result property="certexptime" column="certExpTime"/>
+		<result property="freessl30" column="freessl30"/>
+		<result property="certservernumber" column="certserverNumber"/>
+		<result property="certalldomain" column="certallDomain"/>
+		<result property="certcsr" column="certcsr"/>
+		<result property="certvalidatetype" column="certValidateType"/>
+		<result property="certbankname" column="certBankName"/>
+		<result property="certbankno" column="certBankNo"/>
+		<result property="orgName" column="org_name"/>
+		<result property="orgEmail" column="org_email"/>
+		<result property="orgType" column="org_Type"/>
+		<result property="orgPhone" column="org_phone"/>
+		<result property="ownuserName" column="ownUser_name"/>
+		<result property="ownuserEmail" column="ownUser_email"/>
+		<result property="ownuserPhone" column="ownUser_phone"/>
+		<result property="ownuserIdcardnumber" column="ownUser_idCardNumber"/>
+		<result property="type" column="type"/>
+		<result property="status" column="status"/>
+		<result property="createtime" column="createTime"/>
+		<result property="endtime" column="endTime"/>
+		<result property="remark" column="remark"/>
+	</resultMap>
+
+	<insert id="insert"  useGeneratedKeys="true" keyProperty="id"  parameterType="com.domain.pojo.DomainSsl">
+		insert into  domain_ssl (certTypeId,companyId,certencryptType,certExpTime,freessl30,certserverNumber,certallDomain,certcsr,certValidateType,certBankName,certBankNo,org_name,org_email,org_Type,org_phone,ownUser_name,ownUser_email,ownUser_phone,ownUser_idCardNumber,type,status,createTime,endTime,remark) values(#{certtypeid},#{companyid},#{certencrypttype},#{certexptime},#{freessl30},#{certservernumber},#{certalldomain},#{certcsr},#{certvalidatetype},#{certbankname},#{certbankno},#{orgName},#{orgEmail},#{orgType},#{orgPhone},#{ownuserName},#{ownuserEmail},#{ownuserPhone},#{ownuserIdcardnumber},#{type},#{status},#{createtime},#{endtime},#{remark})	
+	</insert>
+
+	<update id="update" parameterType="com.domain.pojo.DomainSsl">
+		update domain_ssl
+		<set>
+			<if test="certtypeid!=null">certTypeId = #{certtypeid},</if>
+			<if test="companyid!=null">companyId = #{companyid},</if>
+			<if test="certencrypttype!=null">certencryptType = #{certencrypttype},</if>
+			<if test="certexptime!=null">certExpTime = #{certexptime},</if>
+			<if test="freessl30!=null">freessl30 = #{freessl30},</if>
+			<if test="certservernumber!=null">certserverNumber = #{certservernumber},</if>
+			<if test="certalldomain!=null">certallDomain = #{certalldomain},</if>
+			<if test="certcsr!=null">certcsr = #{certcsr},</if>
+			<if test="certvalidatetype!=null">certValidateType = #{certvalidatetype},</if>
+			<if test="certbankname!=null">certBankName = #{certbankname},</if>
+			<if test="certbankno!=null">certBankNo = #{certbankno},</if>
+			<if test="orgName!=null">org_name = #{orgName},</if>
+			<if test="orgEmail!=null">org_email = #{orgEmail},</if>
+			<if test="orgType!=null">org_Type = #{orgType},</if>
+			<if test="orgPhone!=null">org_phone = #{orgPhone},</if>
+			<if test="ownuserName!=null">ownUser_name = #{ownuserName},</if>
+			<if test="ownuserEmail!=null">ownUser_email = #{ownuserEmail},</if>
+			<if test="ownuserPhone!=null">ownUser_phone = #{ownuserPhone},</if>
+			<if test="ownuserIdcardnumber!=null">ownUser_idCardNumber = #{ownuserIdcardnumber},</if>
+			<if test="type!=null">type = #{type},</if>
+			<if test="status!=null">status = #{status},</if>
+			<if test="createtime!=null">createTime = #{createtime},</if>
+			<if test="endtime!=null">endTime = #{endtime},</if>
+			<if test="remark!=null">remark = #{remark}</if>
+		</set>
+		where id = #{id}
+	</update>
+
+	<delete id="delete" parameterType="com.domain.pojo.DomainSsl">
+		delete from domain_ssl where 1=1
+			<if test="id != null"> and id = #{id}</if>
+			<if test="certtypeid != null"> and certTypeId = #{certtypeid}</if>
+			<if test="companyid != null"> and companyId = #{companyid}</if>
+			<if test="certencrypttype != null"> and certencryptType = #{certencrypttype}</if>
+			<if test="certexptime != null"> and certExpTime = #{certexptime}</if>
+			<if test="freessl30 != null"> and freessl30 = #{freessl30}</if>
+			<if test="certservernumber != null"> and certserverNumber = #{certservernumber}</if>
+			<if test="certalldomain != null"> and certallDomain = #{certalldomain}</if>
+			<if test="certcsr != null"> and certcsr = #{certcsr}</if>
+			<if test="certvalidatetype != null"> and certValidateType = #{certvalidatetype}</if>
+			<if test="certbankname != null"> and certBankName = #{certbankname}</if>
+			<if test="certbankno != null"> and certBankNo = #{certbankno}</if>
+			<if test="orgName != null"> and org_name = #{orgName}</if>
+			<if test="orgEmail != null"> and org_email = #{orgEmail}</if>
+			<if test="orgType != null"> and org_Type = #{orgType}</if>
+			<if test="orgPhone != null"> and org_phone = #{orgPhone}</if>
+			<if test="ownuserName != null"> and ownUser_name = #{ownuserName}</if>
+			<if test="ownuserEmail != null"> and ownUser_email = #{ownuserEmail}</if>
+			<if test="ownuserPhone != null"> and ownUser_phone = #{ownuserPhone}</if>
+			<if test="ownuserIdcardnumber != null"> and ownUser_idCardNumber = #{ownuserIdcardnumber}</if>
+			<if test="type != null"> and type = #{type}</if>
+			<if test="status != null"> and status = #{status}</if>
+			<if test="createtime != null"> and createTime = #{createtime}</if>
+			<if test="endtime != null"> and endTime = #{endtime}</if>
+			<if test="remark != null"> and remark = #{remark}</if>
+	</delete>
+
+	<select id="select" resultMap="DomainSslMap" parameterType="com.domain.pojo.DomainSsl">
+		select * from domain_ssl where 1 = 1
+			<if test="id != null"> and id = #{id}</if>
+			<if test="certtypeid != null"> and certTypeId = #{certtypeid}</if>
+			<if test="companyid != null"> and companyId = #{companyid}</if>
+			<if test="certencrypttype != null"> and certencryptType = #{certencrypttype}</if>
+			<if test="certexptime != null"> and certExpTime = #{certexptime}</if>
+			<if test="freessl30 != null"> and freessl30 = #{freessl30}</if>
+			<if test="certservernumber != null"> and certserverNumber = #{certservernumber}</if>
+			<if test="certalldomain != null"> and certallDomain = #{certalldomain}</if>
+			<if test="certcsr != null"> and certcsr = #{certcsr}</if>
+			<if test="certvalidatetype != null"> and certValidateType = #{certvalidatetype}</if>
+			<if test="certbankname != null"> and certBankName = #{certbankname}</if>
+			<if test="certbankno != null"> and certBankNo = #{certbankno}</if>
+			<if test="orgName != null"> and org_name = #{orgName}</if>
+			<if test="orgEmail != null"> and org_email = #{orgEmail}</if>
+			<if test="orgType != null"> and org_Type = #{orgType}</if>
+			<if test="orgPhone != null"> and org_phone = #{orgPhone}</if>
+			<if test="ownuserName != null"> and ownUser_name = #{ownuserName}</if>
+			<if test="ownuserEmail != null"> and ownUser_email = #{ownuserEmail}</if>
+			<if test="ownuserPhone != null"> and ownUser_phone = #{ownuserPhone}</if>
+			<if test="ownuserIdcardnumber != null"> and ownUser_idCardNumber = #{ownuserIdcardnumber}</if>
+			<if test="type != null"> and type = #{type}</if>
+			<if test="status != null"> and status = #{status}</if>
+			<if test="createtime != null"> and createTime = #{createtime}</if>
+			<if test="endtime != null"> and endTime = #{endtime}</if>
+			<if test="remark != null"> and remark = #{remark}</if>
+	</select>
+
+	<select id="selectByParam" resultMap="DomainSslMap" parameterType="java.util.Map">
+		select  <if test="field != null and field != ''"> ${field}</if>  <if test="field == null or field == ''"> * </if>     from domain_ssl <if test="param != null and param != ''">where ${param}</if>
+	</select>
+
+	<delete id="deleteByParam" parameterType="java.util.Map">
+		delete from domain_ssl  <if test="param != null and param != ''">where ${param}</if>
+	</delete>
+
+	<update id="updateByParam" parameterType="java.util.Map">
+		<if test="param != null and param !=''">update domain_ssl set ${param}</if>
+	</update>
+
+</mapper>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<mappers>
+		<mapper resource="mappers/DomainAuthentication.xml"/>
+		<mapper resource="mappers/DomainConfigure.xml"/>
+		<mapper resource="mappers/DomainEmail.xml"/>
+		<mapper resource="mappers/DomainName.xml"/>
+		<mapper resource="mappers/DomainOperatelog.xml"/>
+		<mapper resource="mappers/DomainPrice.xml"/>
+		<mapper resource="mappers/DomainResolveList.xml"/>
+		<mapper resource="mappers/DomainSyslog.xml"/>
+		<mapper resource="mappers/DomainTemplate.xml"/>
+		<mapper resource="mappers/DomainTransfer.xml"/>
+		<mapper resource="mappers/DomianCart.xml"/>
+		<mapper resource="mappers/DomainRole.xml"/>
+		<mapper resource="mappers/DomainSsl.xml"/>
+		<mapper resource="mappers/DomainSslMaterial.xml"/>
+		<mapper resource="bossmappers/YrComper.xml"/>
+		<mapper resource="cloudmappers/OrderTable.xml"/>
+	</mappers>
+</configuration>

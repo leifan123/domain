@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.liferay:org.jsoup:1.10.2.LIFERAY-PATCHED-3">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/liferay/org.jsoup/1.10.2.LIFERAY-PATCHED-3/org.jsoup-1.10.2.LIFERAY-PATCHED-3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/liferay/org.jsoup/1.10.2.LIFERAY-PATCHED-3/org.jsoup-1.10.2.LIFERAY-PATCHED-3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/liferay/org.jsoup/1.10.2.LIFERAY-PATCHED-3/org.jsoup-1.10.2.LIFERAY-PATCHED-3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

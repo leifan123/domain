@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.domain.dao.DomainAuthenticationDao">
+
+	<resultMap id="DomainAuthenticationMap" type="com.domain.pojo.DomainAuthentication">
+		<result property="id" column="id"/>
+		<result property="companyId" column="companyId"/>
+		<result property="userid" column="userid"/>
+		<result property="username" column="userName"/>
+		<result property="authenicationtype" column="authenicationType"/>
+		<result property="organizationType" column="organizationType"/>
+		<result property="cardtype" column="cardType"/>
+		<result property="cardnum" column="cardNum"/>
+		<result property="cardurl" column="cardUrl"/>
+		<result property="status" column="status"/>
+		<result property="createtime" column="createTime"/>
+		<result property="completetime" column="completeTime"/>
+		<result property="remark" column="remark"/>
+	</resultMap>
+
+	<insert id="insert"  useGeneratedKeys="true" keyProperty=""  parameterType="com.domain.pojo.DomainAuthentication">
+		insert into  domain_authentication (id,companyId,userid,userName,authenicationType,organizationType,cardType,cardNum,cardUrl,status,createTime,completeTime,remark) 
+		values(#{id},#{companyId},#{userid},#{username},#{authenicationtype},#{organizationType},#{cardtype},#{cardnum},#{cardurl},#{status},#{createtime},#{completetime},#{remark})	
+	</insert>
+
+	<update id="update" parameterType="com.domain.pojo.DomainAuthentication">
+		update domain_authentication
+		<set>
+			<if test="id!=null">id = #{id},</if>
+			<if test="companyId!=null">companyId = #{companyId},</if>
+			<if test="userid!=null">userid = #{userid},</if>
+			<if test="username!=null">userName = #{username},</if>
+			<if test="authenicationtype!=null">authenicationType = #{authenicationtype},</if>
+			<if test="organizationType!=null">organizationType = #{organizationType},</if>
+			<if test="cardtype!=null">cardType = #{cardtype},</if>
+			<if test="cardnum!=null">cardNum = #{cardnum},</if>
+			<if test="cardurl!=null">cardUrl = #{cardurl},</if>
+			<if test="status!=null">status = #{status},</if>
+			<if test="createtime!=null">createTime = #{createtime},</if>
+			<if test="completetime!=null">completeTime = #{completetime},</if>
+			<if test="remark!=null">remark = #{remark}</if>
+		</set>
+		where userName = #{username} and companyId = #{companyId}
+	</update>
+
+	<delete id="delete" parameterType="com.domain.pojo.DomainAuthentication">
+		delete from domain_authentication where 1=1
+			<if test="id != null"> and id = #{id}</if>
+			<if test="companyId!=null"> and companyId = #{companyId}</if>
+			<if test="userid!=null"> and userid = #{userid}</if>
+			<if test="username != null"> and userName = #{username}</if>
+			<if test="authenicationtype != null"> and authenicationType = #{authenicationtype}</if>
+			<if test="organizationType!=null"> and organizationType = #{organizationType}</if>
+			<if test="cardtype != null"> and cardType = #{cardtype}</if>
+			<if test="cardnum != null"> and cardNum = #{cardnum}</if>
+			<if test="cardurl != null"> and cardUrl = #{cardurl}</if>
+			<if test="status != null"> and status = #{status}</if>
+			<if test="createtime != null"> and createTime = #{createtime}</if>
+			<if test="completetime != null"> and completeTime = #{completetime}</if>
+			<if test="remark != null"> and remark = #{remark}</if>
+	</delete>
+
+	<select id="select" resultMap="DomainAuthenticationMap" parameterType="com.domain.pojo.DomainAuthentication">
+		select * from domain_authentication where 1 = 1
+			<if test="id != null"> and id = #{id}</if>
+			<if test="companyId!=null"> and companyId = #{companyId}</if>
+			<if test="username != null"> and userName = #{username}</if>
+			<if test="userid!=null"> and userid = #{userid}</if>
+			<if test="authenicationtype != null"> and authenicationType = #{authenicationtype}</if>
+			<if test="organizationType!=null"> and organizationType = #{organizationType}</if>	
+			<if test="cardtype != null"> and cardType = #{cardtype}</if>
+			<if test="cardnum != null"> and cardNum = #{cardnum}</if>
+			<if test="cardurl != null"> and cardUrl = #{cardurl}</if>
+			<if test="status != null"> and status = #{status}</if>
+			<if test="createtime != null"> and createTime = #{createtime}</if>
+			<if test="completetime != null"> and completeTime = #{completetime}</if>
+			<if test="remark != null"> and remark = #{remark}</if>
+	</select>
+
+	<select id="selectByParam" resultMap="DomainAuthenticationMap" parameterType="java.util.Map">
+		select  <if test="field != null and field != ''"> ${field}</if>  <if test="field == null or field == ''"> * </if>     from domain_authentication <if test="param != null and param != ''">where ${param}</if>
+	</select>
+
+	<delete id="deleteByParam" parameterType="java.util.Map">
+		delete from domain_authentication  <if test="param != null and param != ''">where ${param}</if>
+	</delete>
+
+	<update id="updateByParam" parameterType="java.util.Map">
+		<if test="param != null and param !=''">update domain_authentication set ${param}</if>
+	</update>
+
+</mapper>
